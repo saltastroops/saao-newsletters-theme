@@ -23,3 +23,14 @@ function child_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
+
+/**
+ * Don't show post/page titles.
+ * 
+ * https://wpastra.com/docs/remove-page-header-title/
+ */
+function remove_page_header_title() {
+  return;
+}
+
+add_filter( 'astra_advanced_header_title', 'remove_page_header_title' );
