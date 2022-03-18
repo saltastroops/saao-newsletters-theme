@@ -9,3 +9,24 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: saao-newsletters
 Template: astra
 */
+
+.ast-separate-container #primary {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.ast-separate-container .ast-article-single {
+    padding-top: 0;
+}
+
+.entry-header {
+    display: none;
+}
+
+.ast-container {
+    padding: 0;
+}
+
+.ast-primary-header-bar {
+    border: none;
+}
