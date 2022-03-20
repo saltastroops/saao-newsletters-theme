@@ -139,3 +139,6 @@ function newsletter_article_post_type() {
 
 }
 add_action( 'init', 'newsletter_article_post_type', 0 );
+
+
+add_image_size('teaser-image-size', 552, 368, true);
