@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package SAAO Newsletters
- * @since 1.1.0
+ * @since 1.2.0
  */
 
 /**
