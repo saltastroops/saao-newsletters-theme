@@ -141,4 +141,14 @@ function newsletter_article_post_type() {
 add_action( 'init', 'newsletter_article_post_type', 0 );
 
 
+/* Add image size for the teasers */
+
 add_image_size('teaser-image-size', 552, 368, true);
+
+/* Remove the image size size added by the Ajax Load More plugin */
+
+function alm_remove_image_size() {
+    global $ajax_load_more;
+    remove_filter( 'after_setup_theme', array( $ajax_load_more, 'alm_image_sizes' ) );
+}
+add_action( 'after_setup_theme', 'alm_remove_image_size', 1 );
