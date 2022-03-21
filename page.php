@@ -9,7 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-<div class="newsletter-article normal-width">
+<div class="normal-width">
+<div class="normal-width">
 
     <div id="primary" <?php astra_primary_class(); ?>>
 
@@ -19,17 +20,11 @@ get_header(); ?>
 
         <?php astra_entry_bottom(); ?>
 
-        <div class="mailblaze-container">
-            <div class="mailblaze">
-                <h2>Sign up for the SAAO newsletter mailing list</h2>
-                <?php echo do_shortcode('[mb4wp_form id="121"]') ?>
-            </div>
-        </div>
-
     </div><!-- #primary -->
 
     <?php astra_entry_after(); ?>
 
+</div>
 </div>
 
 <?php get_footer(); ?>

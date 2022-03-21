@@ -10,6 +10,8 @@ Text Domain: saao-newsletters
 Template: astra
 */
 
+/* GENERAL STYLES */
+
 .ast-separate-container #primary {
     margin-top: 0;
     padding-top: 0;
@@ -31,8 +33,29 @@ Template: astra
     border: none;
 }
 
+.ast-primary-header-bar .ast-custom-button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
 body {
     background: #FAFAFA;
+}
+
+.normal-width {
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+h1, h2, h3 {
+    font-style: normal;
+    font-weight: 700;
 }
 
 /* STYLES FOR THE HOME PAGE */
@@ -123,9 +146,6 @@ body {
 
 /* FONTS - edit as you see fit or remove to have it match the rest of the theme.  */
 .issue-container h2, .issue-container h3 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     text-align: center;
 }
 
@@ -142,14 +162,7 @@ body {
 
 /* STYLES FOR A NEWSLETTER ARTICLE PAGE */
 
-.newsletter-article {
-    max-width: 800px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
-.newsletter-article h1 {
-    font-family: 'Roboto';
+h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -159,4 +172,29 @@ body {
 
 .newsletter-article .navigation {
     margin-top: 30px;
+}
+
+.mailblaze-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.mailblaze {
+    display: inline-block;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0 2px 2px rgba(33, 65, 141, 0.2);
+    border-radius: 2px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.mailblaze h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.mailblaze p {
+    margin-bottom: 0;
 }
