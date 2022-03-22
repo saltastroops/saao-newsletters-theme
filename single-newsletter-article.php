@@ -21,8 +21,8 @@ get_header(); ?>
 
         <div class="mailblaze-container">
             <div class="mailblaze">
-                <h2>Sign up for the SAAO newsletter mailing list</h2>
-                <?php echo do_shortcode('[mb4wp_form id="121"]') ?>
+                <h2>Subscribe to the SAAO newsletter mailing list</h2>
+                <?php echo do_shortcode('[mb4wp_form id="117"]') ?>
             </div>
         </div>
 
