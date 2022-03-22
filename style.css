@@ -220,6 +220,10 @@ h1 {
     color: green;
 }
 
+.mb4wp-notice {
+    color: darkorange;
+}
+
 .mb4wp-error {
     color: darkred;
 }
