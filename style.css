@@ -214,6 +214,7 @@ h1 {
 
 .mb4wp-alert {
     margin-top: 1em;
+    font-weight: 700;
 }
 .mb4wp-success {
     color: green;
