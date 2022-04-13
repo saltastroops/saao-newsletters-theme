@@ -3,7 +3,7 @@ Theme Name: SAAO Newsletters
 Author: South African Astronomical Observatory
 Author URI: https://www.saao.ac.za
 Description: Astra child theme for the SAAO newsletters site.
-Version: 1.3.5
+Version: 1.4.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: saao-newsletters
@@ -173,16 +173,27 @@ h1, h2, h3 {
 
 /* STYLES FOR A NEWSLETTER ARTICLE PAGE */
 
+.newsletter-article .navigation {
+    margin-top: 30px;
+}
+
 h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    margin: 40px 0 20px 0;
+    margin: 40px 0 5px 0;
 }
 
-.newsletter-article .navigation {
-    margin-top: 30px;
+.article-authors {
+    margin-bottom: 1em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.article-editors {
+    margin-top: 1.1em;
+    font-style: italic;
 }
 
 .mailblaze-container {

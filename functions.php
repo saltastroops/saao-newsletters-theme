@@ -140,6 +140,62 @@ function newsletter_article_post_type() {
 }
 add_action( 'init', 'newsletter_article_post_type', 0 );
 
+// Register Custom Post Type
+function newsletter_person_post_type() {
+
+    $labels = array(
+        'name'                  => _x( 'Newsletter People', 'Post Type General Name', 'text_domain' ),
+        'singular_name'         => _x( 'Newsletter Person', 'Post Type Singular Name', 'text_domain' ),
+        'menu_name'             => __( 'Newsletter People', 'text_domain' ),
+        'name_admin_bar'        => __( 'Newsletter Person', 'text_domain' ),
+        'archives'              => __( 'Newsletter Person Archives', 'text_domain' ),
+        'attributes'            => __( 'Newsletter Person Attributes', 'text_domain' ),
+        'parent_item_colon'     => __( 'Parent Newsletter Person:', 'text_domain' ),
+        'all_items'             => __( 'All Newsletter People', 'text_domain' ),
+        'add_new_item'          => __( 'Add New Newsletter Person', 'text_domain' ),
+        'add_new'               => __( 'Add New', 'text_domain' ),
+        'new_item'              => __( 'New Newsletter Person', 'text_domain' ),
+        'edit_item'             => __( 'Edit Newsletter Person', 'text_domain' ),
+        'update_item'           => __( 'Update Newsletter Person', 'text_domain' ),
+        'view_item'             => __( 'View Newsletter Person', 'text_domain' ),
+        'view_items'            => __( 'View Newsletter People', 'text_domain' ),
+        'search_items'          => __( 'Search Newsletter Person', 'text_domain' ),
+        'not_found'             => __( 'Not found', 'text_domain' ),
+        'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+        'featured_image'        => __( 'Featured Image', 'text_domain' ),
+        'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+        'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+        'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+        'insert_into_item'      => __( 'Insert into item', 'text_domain' ),
+        'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+        'items_list'            => __( 'Newsletter People list', 'text_domain' ),
+        'items_list_navigation' => __( 'Newsletter People list navigation', 'text_domain' ),
+        'filter_items_list'     => __( 'Filter people list', 'text_domain' ),
+    );
+    $args = array(
+        'label'                 => __( 'Newsletter Person', 'text_domain' ),
+        'description'           => __( 'SAAO newsletter author or editor', 'text_domain' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title' ),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'show_in_rest'          => false,
+        'menu_position'         => 5,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,
+        'exclude_from_search'   => true,
+        'publicly_queryable'    => false,
+        'capability_type'       => 'page',
+    );
+    register_post_type( 'newsletter-person', $args );
+
+}
+add_action( 'init', 'newsletter_person_post_type', 0 );
+
 
 /* Add image size for the teasers */
 
