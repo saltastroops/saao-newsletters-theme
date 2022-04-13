@@ -45,7 +45,7 @@ get_header(); ?>
 
         <h1><?= get_the_title() ?></h1>
 
-        <div class="article-authors"><?= saao_newsletter_format_people(get_field("article-authors", 104)) ?></div>
+        <div class="article-authors"><?= saao_newsletter_format_people(get_field("article-authors")) ?></div>
 
         <?php astra_entry_content_single(); ?>
 
