@@ -4,7 +4,10 @@
     $articles = get_field("articles", $post->ID);
     ?>
     <div class="issue-container">
-        <h2>Issue <?= get_field("issue-number", $post) ?></h2>
+        <h2>
+            Issue <?= get_field("issue-number", $post) ?>:
+            <?= get_field("issue-title", $post) ?>
+        </h2>
         <div class="issue-content<?= count($articles) % 2 ? ' odd' : '' ?>">
             <?php
             foreach ($articles as $index => $article) {
